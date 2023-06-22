@@ -1,0 +1,85 @@
+:root{
+    --cor01: #59230C;
+    --cor02: #993C14;
+    --cor03: #C24D1A;
+    --cor04: #D9551C;
+    --cor05: #E65A1E;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(72deg, #3DEBB0 1%, #8956F3 99%);
+}
+
+.content{
+    height: 920px;
+    width: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px rgba(255, 255, 255, 0.541) solid;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-47%);
+    display: flex;
+}
+
+.bar{
+    width: 100px;
+    height: 25px;
+    border: 4px solid rgba(255, 255, 255, 0.541);
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bar:hover{
+    background: rgb(255, 255, 255);
+    transition: all .4s;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide{
+    width: 25%;
+    transition: all .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}
