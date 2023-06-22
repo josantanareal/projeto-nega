@@ -83,3 +83,35 @@ input{
 #slide4:checked ~ .s1{
     margin-left: -75%;
 }
+
+@media (width >= 500px){
+    body{
+        padding: 0;
+    }
+
+    .content{
+        width: 400px;
+        height: 700px;
+    }
+    
+    .bar{
+        width: 70px;
+        height: 10;
+        margin: 6px;
+    }
+
+    .slide img{
+        width: auto;
+        height: 100%;
+}
+
+@media (width >= 1000px){
+    body{
+        padding: 0;
+    }
+
+    .content{
+        width: 500px;
+        height: 800px;
+    }
+}
