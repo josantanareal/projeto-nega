@@ -1,11 +1,3 @@
-:root{
-    --cor01: #59230C;
-    --cor02: #993C14;
-    --cor03: #C24D1A;
-    --cor04: #D9551C;
-    --cor05: #E65A1E;
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -114,6 +106,28 @@ input{
     .content{
         width: 400px;
         height: 600px;
+    }
+    
+    .bar{
+        width: 70px;
+        height: 10;
+        margin: 6px;
+    }
+
+    #img4{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (width < 500px){
+    body{
+        padding: 0;
+    }
+
+    .content{
+        width: 300px;
+        height: 500px;
     }
     
     .bar{
